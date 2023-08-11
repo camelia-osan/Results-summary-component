@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@800&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Results summary component</title>
+</head>
+
+<body>
+  <div class="parentContainer">
+    <div class="childContainer" id="resultsDiv">
+      <h4 id="resultsTitle">Your Result</h4>
+      <div class="resultsCircle">
+        <div class="circleContent">
+          <h1 id="circleScore">76</h1>
+          <p id="circleTotal">of 100</p>
+        </div>
+      </div>
+      <div class="resultsText">
+        <h3 id="resultsConclusion">Great</h3>
+        <p id="resultsExplanation">You scored higher than 65% of the people who have taken these tests.</p>
+      </div>
+    </div>
+    <div class="childContainer" id="summaryDiv">
+      <div class="summaryContainer">
+        <h4 id="summaryTitle">Summary</h4>
+        <div class="skillsParent"> <!-- Wraps the 4 divs for each skill -->
+          <!-- Generated in "script.js" using data from "data.json" -->
+        </div>
+        <input type="button" value="Continue" class="btn">
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script type="module" src="script.js"></script>
+</body>
+
+</html>

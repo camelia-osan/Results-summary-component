@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@800&display=swap');
+
+
+.parentContainer {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 2vw;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 50vw;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#resultsDiv {
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    width: 50%;
+    border-radius: 2vw;
+}
+
+#resultsTitle {
+    text-align: center;
+    color: hsl(241, 100%, 89%);
+    font-size: 1.75vw;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.resultsText {
+    margin: auto;
+    text-align: center;
+    width: 18vw;
+    margin-top: 3vw;
+    margin-bottom: 2vw;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.resultsCircle {
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 14vw;
+    height: 14vw;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.circleContent {
+    height: 100vw;
+    width: 100vw;
+    color: hsl(0, 0%, 100%);
+}
+
+#circleTotal {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 1.3vw;
+    color: hsl(241, 100%, 89%);
+    margin-top: -3.5vw;
+}
+
+#circleScore {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 5vw;
+}
+
+#resultsConclusion {
+    font-size: 2.5vw;
+    color: hsl(0, 0%, 100%);
+    margin-top: 2vw;
+}
+
+#resultsExplanation {
+    font-size: 1.3vw;
+    color: hsl(241, 100%, 89%);
+    margin-top: -1vw;
+}
+
+#summaryDiv {
+    width: 50%;
+    border-radius: 2vw;
+}
+
+.summaryContainer {
+    margin: auto;
+    width: 80%;
+}
+
+.skillsParent {
+    display: flex;
+    flex-direction: column;
+    margin-top: -5%;
+}
+
+#reaction,
+#memory,
+#verbal,
+#visual {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 3% auto 3% auto;
+    font-weight: 700;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 1.3vw;
+}
+
+#reaction {
+    background-color: hsla(0, 100%, 67%, 0.05);
+}
+
+#memory {
+    background-color: hsla(39, 100%, 56%, 0.05);
+}
+
+#verbal {
+    background-color: hsla(166, 100%, 37%, 0.05);
+}
+
+#visual {
+    background-color: hsla(234, 85%, 45%, 0.05);
+}
+
+.btn {
+    margin: 10% auto 15% auto;
+    width: 100%;
+    border-radius: 2vw;
+    padding: 1vw;
+    background-color: hsl(224, 30%, 27%);
+    color: hsl(0, 0%, 100%);
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 1.25vw;
+}
+
+.btn:hover {
+    background-color: hsl(224, 30%, 35%);
+    border-color: hsl(224, 30%, 35%);
+}
+
+#reactionText {
+    color: hsl(0, 100%, 67%);
+}
+
+#memoryText {
+    color: hsl(39, 100%, 56%);
+}
+
+#verbalText {
+    color: hsl(166, 100%, 37%);
+}
+
+#visualText {
+    color: hsl(234, 85%, 45%);
+}
+
+#summaryTitle {
+    font-family: 'Hanken Grotesk', sans-serif;
+    color: hsl(224, 30%, 27%);
+    font-size: 1.75vw;
+}
+
+.testsScore {
+    font-family: 'Hanken Grotesk', sans-serif;
+    color: hsl(224, 30%, 27%);
+    font-size: 1.3vw;
+    font-weight: 800;
+}
+
+.testsTotal {
+    margin-left: auto;
+    padding-right: 1vw;
+    font-family: 'Hanken Grotesk', sans-serif;
+    color: hsla(224, 30%, 27%, 0.5);
+    font-size: 1.3vw;
+    font-weight: 800;
+}
+
+.skillsChild {
+    border-radius: 1vw;
+}
+
+.skillsIcon {
+    padding: 0 1vw 0 1vw;
+    width: 1.4vw;
+}
+
+/* Devices customization */
+@media screen and (min-width: 320px) and (max-width: 769px) {
+    .parentContainer {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        box-shadow: none;
+    }
+
+    #resultsDiv,
+    #summaryDiv {
+        margin: 0;
+        padding: 0;
+        height: 100vw;
+        width: 100%;
+    }
+
+    #resultsDiv {
+        border-bottom-left-radius: 7vw;
+        border-bottom-right-radius: 7vw;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    #resultsTitle,
+    #summaryTitle {
+        font-size: 5vw;
+    }
+
+    .resultsText {
+        margin: auto;
+        text-align: center;
+        width: 80vw;
+        margin-top: 12vw;
+        margin-bottom: 10vw;
+        color: hsl(0, 0%, 100%);
+        font-family: 'Hanken Grotesk', sans-serif;
+    }
+
+    .resultsCircle {
+        width: 35vw;
+        height: 35vw;
+    }
+
+    #circleTotal {
+        font-size: 4vw;
+        margin-top: -11vw;
+    }
+
+    #circleScore {
+        margin-top: 8vw;
+        font-size: 14vw;
+    }
+
+    #resultsConclusion {
+        font-size: 7vw;
+        margin-top: -9vw;
+    }
+
+    #resultsExplanation {
+        font-size: 4.5vw;
+    }
+
+    .summaryContainer {
+        width: 85%;
+    }
+
+    .skillsParent {
+        margin-top: 0.5vw;
+    }
+
+    #reaction,
+    #memory,
+    #verbal,
+    #visual {
+        margin: 3% auto 3% auto;
+        font-size: 4vw;
+    }
+
+    .btn {
+        border-radius: 7vw;
+        padding: 3.5vw;
+        font-size: 4vw;
+    }
+
+    .testsScore {
+        font-size: 4vw;
+    }
+
+    .testsTotal {
+        padding-right: 5vw;
+        font-size: 4vw;
+    }
+
+    .skillsChild {
+        border-radius: 2.5vw;
+    }
+
+    .skillsIcon {
+        padding: 0 5vw 0 5vw;
+        width: 5vw;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1025px) {
+    .parentContainer {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        box-shadow: none;
+    }
+
+    #resultsDiv,
+    #summaryDiv {
+        margin: 0;
+        padding: 0;
+        height: 100vw;
+        width: 100%;
+    }
+
+    #resultsDiv {
+        border-bottom-left-radius: 7vw;
+        border-bottom-right-radius: 7vw;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    #resultsTitle,
+    #summaryTitle {
+        font-size: 5vw;
+    }
+
+    .resultsText {
+        margin: auto;
+        text-align: center;
+        width: 80vw;
+        margin-top: 12vw;
+        margin-bottom: 10vw;
+        color: hsl(0, 0%, 100%);
+        font-family: 'Hanken Grotesk', sans-serif;
+    }
+
+    .resultsCircle {
+        width: 35vw;
+        height: 35vw;
+    }
+
+    #circleTotal {
+        font-size: 4vw;
+        margin-top: -11vw;
+    }
+
+    #circleScore {
+        margin-top: 8vw;
+        font-size: 14vw;
+    }
+
+    #resultsConclusion {
+        font-size: 7vw;
+        margin-top: -9vw;
+    }
+
+    #resultsExplanation {
+        font-size: 4.5vw;
+    }
+
+    .summaryContainer {
+        width: 85%;
+    }
+
+    .skillsParent {
+        margin-top: 0.5vw;
+    }
+
+    #reaction,
+    #memory,
+    #verbal,
+    #visual {
+        margin: 3% auto 3% auto;
+        font-size: 4vw;
+    }
+
+    .btn {
+        border-radius: 7vw;
+        padding: 3.5vw;
+        font-size: 4vw;
+    }
+
+    .testsScore {
+        font-size: 4vw;
+    }
+
+    .testsTotal {
+        padding-right: 5vw;
+        font-size: 4vw;
+    }
+
+    .skillsChild {
+        border-radius: 2.5vw;
+    }
+
+    .skillsIcon {
+        padding: 0 5vw 0 5vw;
+        width: 5vw;
+    }
+}
